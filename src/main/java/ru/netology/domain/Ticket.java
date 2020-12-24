@@ -34,7 +34,7 @@ public class Ticket implements Comparable <Ticket>{
         this.price = price;
     }
 
-    public boolean getFromAirport() {
+    public String getFromAirport() {
         return fromAirport;
     }
 
@@ -42,7 +42,7 @@ public class Ticket implements Comparable <Ticket>{
         this.fromAirport = fromAirport;
     }
 
-    public boolean getToAirport() {
+    public String getToAirport() {
         return toAirport;
     }
 

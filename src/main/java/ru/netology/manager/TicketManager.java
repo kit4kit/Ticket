@@ -7,12 +7,15 @@ import java.util.Arrays;
 
 
 public class TicketManager {
-    private TicketRepository repository;
+    public TicketRepository repository;
     public TicketManager(TicketRepository repository) {
         this.repository = repository;
     }
 
-    public Ticket[] airportSearch(String fromAirport, String toAirport) {
+    public TicketManager() {
+    }
+
+    public Ticket[] airportSearch(String toAirport, String fromAirport) {
         Ticket[] result = new Ticket[0];
         for (Ticket ticket : repository.findAll()){
             if(ticket.getToAirport().equalsIgnoreCase(toAirport) && ticket.getFromAirport().equalsIgnoreCase(fromAirport)){

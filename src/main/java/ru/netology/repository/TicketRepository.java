@@ -3,6 +3,7 @@ package ru.netology.repository;
 
 import ru.netology.domain.Ticket;
 
+
 public class TicketRepository {
     private Ticket[] items = new Ticket[0];
 
@@ -18,6 +19,7 @@ public class TicketRepository {
     public Ticket[] findAll() {
         return items;
     }
+
 
     public Ticket findById(int id) {
         for (Ticket item : items) {
