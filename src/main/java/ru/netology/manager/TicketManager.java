@@ -12,8 +12,6 @@ public class TicketManager {
         this.repository = repository;
     }
 
-    public TicketManager() {
-    }
 
     public Ticket[] airportSearch(String toAirport, String fromAirport) {
         Ticket[] result = new Ticket[0];
